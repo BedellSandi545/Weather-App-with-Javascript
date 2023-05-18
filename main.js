@@ -15,14 +15,19 @@ searchBtn.addEventListener("click", async () => {
     );
     const data = await req.json();
 
-    if (!city) throw new Error("No city specified");
+    if (!city) {
+      console.clear();
+      throw new Error("No city specified");
+    }
 
     if (data.cod === "404") {
+      body.style.backgroundImage = "";
       body.style.backgroundColor = "red";
       weatherDetails.style.display = "none";
       weatherBox.style.display = "none";
       error404.style.display = "block";
       error404.classList.add("fade-in");
+      console.clear();
       return;
     }
 
