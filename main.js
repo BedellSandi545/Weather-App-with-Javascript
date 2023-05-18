@@ -32,28 +32,28 @@ searchBtn.addEventListener("click", async () => {
     const img = document.querySelector(".weather-box img");
 
     if (data.weather[0].main === "Clouds") {
-      img.src = "images/cloud.png";
-      body.style.backgroundImage = `url("images/cloudbg.jpg")`;
+      img.src = "/cloud.png";
+      body.style.backgroundImage = `url("/cloudbg.jpg")`;
     }
 
     if (data.weather[0].main === "Rain") {
-      img.src = "images/rain.png";
-      body.style.backgroundImage = `url("images/rainbg.jpg")`;
+      img.src = "/rain.png";
+      body.style.backgroundImage = `url("/rainbg.jpg")`;
     }
 
     if (data.weather[0].main === "Clear") {
-      img.src = "images/clear.png";
-      body.style.backgroundImage = `url("images/clearbg.jpg")`;
+      img.src = "/clear.png";
+      body.style.backgroundImage = `url("/clearbg.jpg")`;
     }
 
     if (data.weather[0].main === "Haze") {
-      img.src = "images/mist.png";
-      body.style.backgroundImage = `url("images/mistbg.jpg")`;
+      img.src = "/mist.png";
+      body.style.backgroundImage = `url("/mistbg.jpg")`;
     }
 
     if (data.weather[0].main === "Snow") {
-      img.src = "images/snow.png";
-      body.style.backgroundImage = `url("images/snowbg.jpg")`;
+      img.src = "/snow.png";
+      body.style.backgroundImage = `url("/snowbg.jpg")`;
     }
 
     const kelvin = parseInt(data.main.temp);
