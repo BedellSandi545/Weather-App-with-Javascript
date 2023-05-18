@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App with Javascript</title>
+    <script type="module" src="/main.js" defer></script>
+    <link rel="shortcut icon" href="images/weather.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <div class="container">
+      <div class="search-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <input type="search" placeholder="Enter Country Name" required />
+        <button class="fa-solid fa-search"></button>
+      </div>
+      <div class="not-found">
+        <img src="images/404.png" alt="404 Error" />
+        <h3>OH NO!😒, Incorrect Location 😭.</h3>
+      </div>
+      <div class="weather-box">
+        <img src="" alt="" />
+        <p class="temperature"></p>
+        <p class="description"></p>
+      </div>
+      <div class="weather-details">
+        <div class="humidity">
+          <i class="fa-solid fa-water"></i>
+          <div class="text">
+            <span></span>
+            <p>Humidity</p>
+          </div>
+        </div>
+
+        <div class="wind">
+          <i class="fa-solid fa-wind"></i>
+          <div class="text">
+            <span></span>
+            <p>Wind Speed</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
